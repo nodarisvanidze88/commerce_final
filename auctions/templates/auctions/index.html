@@ -9,6 +9,9 @@
     </select>
     <button type="submit">Filter</button>
   </form>
+  <form action="{% url 'index' %}" method="GET" class="my-3">
+    <button type="submit" class="btn btn-secondary">Clear Filter</button>
+  </form>
   <div class="row mx-3">
     {% for item in activeItems %}
       <div class="card mx-3" style="width: 20rem">
